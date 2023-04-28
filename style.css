@@ -266,11 +266,13 @@ footer a:hover {
 
     footer {
         min-width: 100vw;
+        height: 50px;
         text-align: center;
         color: aliceblue;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        justify-items: center;
         align-items: center;
     }
 }
