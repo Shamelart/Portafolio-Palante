@@ -168,7 +168,7 @@ html {
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
-    color:  #0f0f0f;
+    color: #0f0f0f;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -181,7 +181,7 @@ html {
 }
 
 #contacs p .front {
-   color: #f80a49;
+    color: #f80a49;
 }
 
 footer {
@@ -206,16 +206,15 @@ footer a:hover {
 
 
 /* responsive section*/
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     nav {
         display: none;
     }
 
     nav.responsive {
         display: block;
-
         position: absolute;
-        top: 48px;
+        top: 20px;
         right: 0;
         padding: 5px 0;
     }
@@ -243,28 +242,35 @@ footer a:hover {
         font-size: 40px;
     }
 
-    #home div .contenido .presentacion a {
-        display: none;
-    }
-
     #contacs {
-        min-height: 100vh;
-        padding: 70px 5px;
+        min-width: 100wh;
+        min-height: 100hw;
+        padding: 20px 0 0 5px;
     }
 
     #contacs h3 {
         font-size: 30px;
         font-weight: 500;
+      
     }
 
-    #contacs .form-Container .mitad {
-        margin-bottom: 15px;
-        display: block;
+    #contacs p {
+        text-align: center;
+        margin: 20px;
+        font-size: 25px
     }
 
-    #contacs .form-Container .mitad input {
-        width: 100%;
-        margin-bottom: 15px;
+    #contacs p .front {
+        color: #f80a49;
     }
 
+    footer {
+        min-width: 100vw;
+        text-align: center;
+        color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
